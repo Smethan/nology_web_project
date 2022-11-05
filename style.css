@@ -91,5 +91,6 @@ body {
     align-items: center;
     justify-content: center;
     color: rgb(42, 46, 116);
+    font-family: sans-serif;
     background-color: antiquewhite;
 }
