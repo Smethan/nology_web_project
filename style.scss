@@ -1,0 +1,106 @@
+/* ah, css, my age old enemy */
+/* for some reason the body already has some margin by default, really threw off some measurements */
+body {
+    margin: 0;
+}
+
+/* "it's all rgb(42, 46, 116)?" 🔫 "always has been" */
+$color-primary: rgb(42, 46, 116);
+$color-secondary: rgb(69, 144, 249);
+
+.flex-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+
+    h1 {
+        color: $color-primary;
+        font-family: fantasy;
+        font-weight: bolder;
+    }
+
+    button {
+        margin-left: auto;
+        margin-right: 10px;
+        border-radius: 5px;
+        width: 5rem;
+        height: 3rem;
+        border: 2px solid $color-primary;
+        background-color: white;
+        color: $color-primary;
+    }
+}
+
+/* getting everything to align right was literally more than half of my entire time spent on this */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: sans-serif;
+
+
+
+    /* This part looks *awful* and I'm pretty sure there just has to be a better way to do it, I just don't know it */
+    /* might switch to sass at some point to at least minimize some of the repetition */
+
+    // edit, switched to sass, still looks awful
+    //^ was partially suggested by github copilot, even github thinks my code is bad XD
+    div {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    h1 {
+
+        color: $color-secondary;
+    }
+
+    h2 {
+        color: $color-primary;
+    }
+
+    h3 {
+        color: $color-secondary;
+    }
+
+    p {
+        color: $color-primary;
+    }
+
+}
+
+
+
+
+/* penguin */
+.penguin {
+    scale: 0.75;
+}
+
+.DadButton {
+    border-radius: 5px;
+    border: $color-primary;
+    color: white;
+    font-weight: bold;
+    width: 7rem;
+    height: 3rem;
+    background-color: $color-primary;
+}
+
+/* I don't think this actually has to be a flexbox, but I was already in the flex groove so it is what it is */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $color-primary;
+    font-family: sans-serif;
+    background-color: antiquewhite;
+}

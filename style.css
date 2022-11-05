@@ -1,98 +1,87 @@
+@charset "UTF-8";
 /* ah, css, my age old enemy */
 /* for some reason the body already has some margin by default, really threw off some measurements */
 body {
-    margin: 0;
+  margin: 0;
 }
 
+/* "it's all rgb(42, 46, 116)?" 🔫 "always has been" */
 .flex-header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex-header h1 {
+  color: rgb(42, 46, 116);
+  font-family: fantasy;
+  font-weight: bolder;
+}
+.flex-header button {
+  margin-left: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+  width: 5rem;
+  height: 3rem;
+  border: 2px solid rgb(42, 46, 116);
+  background-color: white;
+  color: rgb(42, 46, 116);
 }
 
 /* getting everything to align right was literally more than half of my entire time spent on this */
 .flex-container {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: sans-serif;
+  /* This part looks *awful* and I'm pretty sure there just has to be a better way to do it, I just don't know it */
+  /* might switch to sass at some point to at least minimize some of the repetition */
 }
-
-/* This part looks *awful* and I'm pretty sure there just has to be a better way to do it, I just don't know it */
-/* might switch to sass at some point to at least minimize some of the repetition */
 .flex-container div {
-    display: flex;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
-
 .flex-container h1 {
-    font-family: sans-serif;
-    color: rgb(69, 144, 249);
+  color: rgb(69, 144, 249);
 }
-
 .flex-container h2 {
-    font-family: sans-serif;
-    color: rgb(42, 46, 116);
+  color: rgb(42, 46, 116);
 }
-
 .flex-container h3 {
-    font-family: sans-serif;
-    color: rgb(69, 144, 249);
+  color: rgb(69, 144, 249);
 }
-
 .flex-container p {
-    font-family: sans-serif;
-    color: rgb(42, 46, 116);
-}
-
-
-/* "it's all rgb(42, 46, 116)?" 🔫 "always has been" */
-.flex-header h1 {
-    color: rgb(42, 46, 116);
-    font-family: fantasy;
-    font-weight: bolder;
-}
-
-.flex-header button {
-    margin-left: auto;
-    margin-right: 10px;
-    border-radius: 5px;
-    width: 5rem;
-    height: 3rem;
-    border: 2px solid rgb(42, 46, 116);
-    background-color: white;
-    color: rgb(42, 46, 116);
+  color: rgb(42, 46, 116);
 }
 
 /* penguin */
 .penguin {
-    scale: 0.75;
+  scale: 0.75;
 }
 
 .DadButton {
-    border-radius: 5px;
-    border: rgb(42, 46, 116);
-    color: white;
-    font-weight: bold;
-    width: 7rem;
-    height: 3rem;
-    background-color: rgb(42, 46, 116);
+  border-radius: 5px;
+  border: rgb(42, 46, 116);
+  color: white;
+  font-weight: bold;
+  width: 7rem;
+  height: 3rem;
+  background-color: rgb(42, 46, 116);
 }
 
 /* I don't think this actually has to be a flexbox, but I was already in the flex groove so it is what it is */
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: rgb(42, 46, 116);
-    font-family: sans-serif;
-    background-color: antiquewhite;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(42, 46, 116);
+  font-family: sans-serif;
+  background-color: antiquewhite;
+}/*# sourceMappingURL=style.css.map */
