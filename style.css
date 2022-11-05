@@ -62,7 +62,8 @@ body {
 
 /* penguin */
 .penguin {
-  scale: 0.75;
+  height: 10rem;
+  width: 10rem;
 }
 
 .DadButton {
