@@ -9,9 +9,29 @@
 .flex-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    padding: 1rem;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.flex-container div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-container-lower {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
 }
 
 .flex-header button {
