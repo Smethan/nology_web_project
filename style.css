@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .flex-header {
     display: flex;
     flex-direction: row;
@@ -23,6 +27,32 @@
     align-items: center;
 }
 
+.flex-container h1 {
+    font-family: sans-serif;
+    color: rgb(69, 144, 249);
+}
+
+.flex-container h2 {
+    font-family: sans-serif;
+    color: rgb(42, 46, 116);
+}
+
+.flex-container h3 {
+    font-family: sans-serif;
+    color: rgb(69, 144, 249);
+}
+
+.flex-container p {
+    font-family: sans-serif;
+    color: rgb(42, 46, 116);
+}
+
+.flex-header h1 {
+    color: rgb(42, 46, 116);
+    font-family: fantasy;
+    font-weight: bolder;
+}
+
 .flex-container-lower {
     display: flex;
     flex-direction: column;
@@ -41,8 +71,29 @@
     width: 5rem;
     height: 3rem;
     border: 2px solid #8831e5;
+    background-color: white;
+    color: #8831e5;
 }
 
 .penguin {
     scale: 0.75;
+}
+
+.DadButton {
+    border-radius: 5px;
+    border: rgb(42, 46, 116);
+    color: white;
+    font-weight: bold;
+    width: 7rem;
+    height: 3rem;
+    background-color: rgb(42, 46, 116);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(42, 46, 116);
+    background-color: antiquewhite;
 }
