@@ -1,3 +1,5 @@
+/* ah, css, my age old enemy */
+/* for some reason the body already has some margin by default, really threw off some measurements */
 body {
     margin: 0;
 }
@@ -10,6 +12,7 @@ body {
     justify-content: flex-start;
 }
 
+/* getting everything to align right was literally more than half of my entire time spent on this */
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -21,6 +24,8 @@ body {
 
 }
 
+/* This part looks *awful* and I'm pretty sure there just has to be a better way to do it, I just don't know it */
+/* might switch to sass at some point to at least minimize some of the repetition */
 .flex-container div {
     display: flex;
     text-align: center;
@@ -53,17 +58,6 @@ body {
     font-weight: bolder;
 }
 
-.flex-container-lower {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-
-}
-
 .flex-header button {
     margin-left: auto;
     margin-right: 10px;
@@ -75,6 +69,7 @@ body {
     color: #8831e5;
 }
 
+/* penguin */
 .penguin {
     scale: 0.75;
 }
@@ -89,6 +84,7 @@ body {
     background-color: rgb(42, 46, 116);
 }
 
+/* I don't think this actually has to be a flexbox, but I was already in the flex groove so it is what it is */
 .footer {
     display: flex;
     flex-direction: column;
