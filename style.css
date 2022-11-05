@@ -52,6 +52,8 @@ body {
     color: rgb(42, 46, 116);
 }
 
+
+/* "it's all rgb(42, 46, 116)?" 🔫 "always has been" */
 .flex-header h1 {
     color: rgb(42, 46, 116);
     font-family: fantasy;
@@ -64,9 +66,9 @@ body {
     border-radius: 5px;
     width: 5rem;
     height: 3rem;
-    border: 2px solid #8831e5;
+    border: 2px solid rgb(42, 46, 116);
     background-color: white;
-    color: #8831e5;
+    color: rgb(42, 46, 116);
 }
 
 /* penguin */
